@@ -15,9 +15,7 @@ class DatabasePersistence
     @logger.info("#{statement} : #{params}")
     @db.exec_params(statement, params)
   end
-  
 
-  
   def find_list(id)
     sql = <<~SQL
     SELECT lists.*, count(todos.id) AS todos_count, 
@@ -32,7 +30,7 @@ class DatabasePersistence
     tuple_to_list_hash(result.first)
 
   end
-  
+
   def all_lists
     sql = <<~SQL
     SELECT lists.*, count(todos.id) AS todos_count, 
@@ -91,7 +89,7 @@ class DatabasePersistence
   end
   
   def find_todos_for_list(list_id)
-        todos_sql = "SELECT * FROM todos WHERE list_id = $1"
+    todos_sql = "SELECT * FROM todos WHERE list_id = $1"
     todo_results = query(todos_sql, list_id)
     todo_results.map do |todo_tuple|
       { 

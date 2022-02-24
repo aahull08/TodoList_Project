@@ -4,12 +4,11 @@ require "tilt/erubis"
 
 
 require_relative "database_persistence"
-
+ 
 configure do
   enable :sessions
   set :session_secret, "secret"
   set :erb, :escape_html => true
-
 end
 
 configure(:development) do
