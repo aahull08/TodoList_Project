@@ -1,4 +1,5 @@
 # TodoList_Project
+![image](https://user-images.githubusercontent.com/12583065/158920617-49ae46ec-8755-4e17-ad20-53cd3263da83.png)
 
 ## Description
 This is a simple todo app that allows a user to create catagories for their todos and check them off as they are finished. This project is based on an sinatra/ruby backend connected to a posgres SQL database using a adapter pattern. The sql database has two tables one for the todo catagory list and one for todos. These tables have a many to one relationship because there can be more than one todo for each catagory but only one catagory for each todo. The backend is using Ruby with the Sinatra framework. The front-end uses vanilla HTML, CSS and Javascript.
