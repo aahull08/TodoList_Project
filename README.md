@@ -18,3 +18,4 @@ Step 5: Edit catagories/Todos
 Step 6: Delete catagories/Todos
 
 ## Roadmap
+In the future I wissh to make the list dots different colors based on the catagory.
